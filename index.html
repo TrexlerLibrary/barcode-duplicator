@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adam Malantonio <adam.malantonio@gmail.com>">
+    <title>Barcode Duplicator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>barcode duplicator</h1>
+    <form class="barcode-form">
+      <label for="barcode">barcode</label>
+      <input type="text" id="barcode" value="" autocomplete="off">
+
+      <label for="copies"># of copies</label>
+      <input type="number" id="copies" value="1">
+
+      <button type="submit">Duplicate</button>
+      <button class="clear">Clear</button>
+    </form>
+
+    <div class="barcode-target"></div>
+
+    <script src="connectcode-javascript-code39.js"></script>
+    <script src="barcodes.js"></script>
+  </body>
+</html>
+

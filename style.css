@@ -1,0 +1,48 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.barcode-form {
+  border-bottom: 1px solid #ff00ff;
+  margin-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 500px;
+}
+
+@media print {
+  .barcode-form {
+    display: none;
+  }
+}
+
+input {
+  font-size: .85em;
+  vertical-align: middle;
+}
+
+label {
+  color: #ff00ff;
+  font-size: .75em;
+  position: absolute;
+  top: 0;
+}
+
+.barcode-wrapper {
+  page-break-after: always;
+}
+
+@media screen {
+  .barcode-wrapper {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 500px;
+  }
+}
